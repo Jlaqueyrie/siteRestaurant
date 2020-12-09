@@ -1,0 +1,7 @@
+#menu figure{
+    display: flex;
+}
+#menu figcaption{
+    display: flex;
+    flex-direction: column;
+}
