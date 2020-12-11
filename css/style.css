@@ -19,3 +19,10 @@
     align-items: center;
     flex-direction: column;
 }
+#nos-plats figure effet-hover img{
+    margin-left: 10em;
+}
+#deco{
+    background-image: url("../images/fond2.jpg");
+    color: seashell;
+}
