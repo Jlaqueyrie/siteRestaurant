@@ -1,12 +1,3 @@
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
 #menu figure{
     display: flex;
 }
@@ -15,21 +6,38 @@
     flex-direction: column;
 }
 #nos-plats figure{
+    position: relative;
     flex:1;
     width: 20em;
-    position: relative;
+    height: 17.56em;
 }
 #nos-plats figcaption{
     position: absolute;
     width: 20em;
-    top: 0;
+    height: 17.56em;
+    bottom: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     flex-direction: column;
+    background: url(../images/noise.png) repeat 0 0 rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s;
+    overflow: hidden;
 }
-#nos-plats figure effet-hover img{
-    margin-left: 10em;
+#nos-plats a:hover figcaption{
+    opacity: 1;
+    transform: scale(1);
+}
+#nos-plats h5{
+    color: beige;
+}
+#nos-plats p{
+    color: beige;
+}
+.effet-hover{
+    overflow: hidden;
 }
 #deco{
     background-image: url("../images/fond2.jpg");
