@@ -13,6 +13,7 @@
             <!-- CSS only -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
             <link rel="stylesheet" href="css/style.css">
         </head>
         <body>
@@ -324,7 +325,6 @@
                             </p>
                         </div>
                     </div>
-
                 </section>
                 <section id="deco" class="row justify-content-center align-items-center">
                     <div class="col-md-6 text-center">
@@ -347,6 +347,7 @@
                         <div class="col-md-2">
                             <input type="time" class="form-control" id="heure-res">
                         </div>
+                        <div><span class="material-icons">people</span></div>
                         <div class="col-md-2">
                             <select class="form-control" id="exampleFormControlSelect1">
                                 <option>1</option>
@@ -358,44 +359,131 @@
                         </div>
                     </div>
                 </section>
-                <section id="commentaire">
-
-                <div id="carouselCarte" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselCarte" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselCarte" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/chef-thumb.jpg" class="d-block" alt="caroussel-commentaire">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                                    elit. Non quas a, beatae mollitia perferendis 
-                                    sapiente provident veniam sequi eligendi illum quis dolorem in,
-                                    nobis, consequuntur quidem iure facere aperiam dignissimos!
-                                </p>
+                <section id="commentaire" class="align-items-center">
+                    <div id="carousel-commentaire" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-commentaire" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-commentaire" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/chef-thumb.jpg" class="d-block" alt="caroussel-plat-1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Plat 1</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                        </div>
+                        <a class="carousel-control-prev" href="#carousel-commentaire" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-commentaire" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselCarte" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Précédent</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselCarte" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Suivant</span>
-                    </a>
-                </div>
-
                 </section>
-                <section id="blog">
-
+                <section id="blog" class="container mt-2">
+                        <h5 class="text-center">Nôtre Blog</h5>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Exercitationem ducimus atque, vero doloribus libero odio provident 
+                        </p>
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="./images/news-1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text pb-3">LLorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate earum fugit sit incidunt vel error distinctio deleniti accusantiu</p>
+                                <a href="#">+ details</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="./images/news-2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate earum fugit sit incidunt vel error distinctio deleniti accusantium</p>
+                                <a href="#">+ details</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="./images/news-3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fuga tempore neque beatae natus cupiditate explicabo commodi quisquam eius</p>
+                                <a href="#">+ details</a>
+                              </div>
+                            </div>
+                          </div>
+                </section>
+                <section id="menu" class="row justify-content-center mt-4">
+                    <div id="information" class="col-md-2">
+                        <h5>Informations</h5>
+                        <ul>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                        </ul>
+                    </div>
+                    <div id="nos-services" class="col-md-2">
+                        <h5>Nos Services</h5>
+                        <ul>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                            <li><a href="#"><span class="material-icons">send</span>liens</a></li>
+                        </ul>
+                    </div>
+                    <div id="contactez-nous" class="col-md-2">
+                        <h5>Contactez-nous</h5>
+                        <p>
+                            <h5>Email</h4>
+                            <a href="monemail@macompanie.com">monemai@macompanie.com</a>
+                        </p>
+                        <p>
+                            <h5>Téléphone</h4>
+                            <a href="tel:0512131614">0501020304</a>
+                        </p>
+                            <h5>Adresse</h4>
+                            <h6>Batiment truc</h6>
+                            <h6>Rue Machin</h6>
+                            <h6>31000 Toulouse</h6>
+                        </p>
+                    </div>
+                    <div id="reseaux-sociaux" class="col-md-2">
+                        <h5>Réseaux Sociaux</h5>
+                        <ul>
+                            <div class="social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i>LinkedIn</a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i>Pinterest</a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i>Rss</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+                <section id="menu-bas"  class="container text-center mt-4 border-bottom border-top">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Accueil</a></li>
+                        <li class="list-inline-item"><a href="#">A Propos</li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">Commandes</a></li>
+                        <li class="list-inline-item"><a href="#">Blog</a></li>
+                        <li class="list-inline-item"><a href="#">Boutique</a></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                    </ul>
                 </section>
             </main>
 
-        <footer>
+        <footer class="container mt-2">
+            <h6>Copyright 2020 XYZ companie</h6>
 
         </footer>
             <!-- JavaScript Bundle with Popper -->

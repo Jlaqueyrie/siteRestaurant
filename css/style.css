@@ -44,3 +44,7 @@
     color: seashell;
     height: 20em;
 }
+.card-deck .card-body p{
+    border-color: gray;
+    border-bottom-style: dotted; 
+}
