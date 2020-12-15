@@ -1,9 +1,72 @@
+/* CONFIGURATION COMMUNE */
+a{
+    text-decoration: none;
+}
+.texte-couleur-principale{
+    color: #8c775c;
+}
+#coordonnee .material-icons.md-14, #menu-site .material-icons.md-14{
+    font-size: 14px;
+    margin-right: 0.4em;
+}
+#coordonnee, #commentaire{
+    background-color: #8c775c;
+}
+#email, #login-inscription{
+    background-color: #353535;
+}
+#menu-site, #menu-bas, footer{
+    background-color: #191919;
+}
+#menu a:hover, #reservation a:hover, #carouselPlats .btn:hover{
+    background-color: #353535;
+    font-weight: bolder;
+}
+#menu-site, #menu-site a{
+    color: white;
+}
+#reservation .btn, #carouselPlats .btn{
+    background-color: #8c775c;
+    color: #ffffff;
+}
+/*  section individuel */
+#coordonnee{
+    color: white;
+    height: 2em;
+    vertical-align: middle;
+}
+#telephone{
+    border:
+    0px 5px 0px 0xpx;
+}
+#barre-navigation{
+   background-color: #ffffff;"
+}
+#barre-navigation ul li:hover{
+    background-color: #8c775c;
+    border-radius: 0.3em 0.3em 0em 0em;
+}
+#btn-cherche:hover{
+    width: 250px;
+}
 #menu figure{
     display: flex;
 }
 #menu figcaption{
     display: flex;
     flex-direction: column;
+}
+#menu a{
+    color: #ffffff;
+    background-color: #8c775c;
+}
+.carousel-item .btn{
+    color: white;
+    background-color: #8c775c;
+}
+#nos-plats a figure figcaption{
+    color: white;
+    font-weight: bolder;
 }
 #nos-plats figure{
     position: relative;
@@ -33,9 +96,6 @@
 #nos-plats h5{
     color: beige;
 }
-#nos-plats p{
-    color: beige;
-}
 .effet-hover{
     overflow: hidden;
 }
@@ -47,4 +107,13 @@
 .card-deck .card-body p{
     border-color: gray;
     border-bottom-style: dotted; 
+}
+.card-body a{
+    color: #353535;
+}
+.card-body a:hover{
+    font-weight: bold;
+}
+#carousel-commentaire > div > blockquote > p:nth-child(1) > i{
+    color: #ffffff;
 }
