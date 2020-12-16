@@ -1,4 +1,7 @@
-/* CONFIGURATION COMMUNE */
+/*-- configuration générale*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 a{
     text-decoration: none;
 }
@@ -14,6 +17,7 @@ a{
 }
 #email, #login-inscription{
     background-color: #353535;
+    text-align: center;
 }
 #menu-site, #menu-bas, footer{
     background-color: #191919;
@@ -25,11 +29,15 @@ a{
 #menu-site, #menu-site a{
     color: white;
 }
+#menu-site a:hover{
+    font-weight: bold;
+}
 #reservation .btn, #carouselPlats .btn{
     background-color: #8c775c;
     color: #ffffff;
 }
-/*  section individuel */
+
+/*--section coordonnee--*/
 #coordonnee{
     color: white;
     height: 2em;
@@ -39,6 +47,7 @@ a{
     border:
     0px 5px 0px 0xpx;
 }
+/*--section barre navigation--*/
 #barre-navigation{
    background-color: #ffffff;"
 }
@@ -46,12 +55,40 @@ a{
     background-color: #8c775c;
     border-radius: 0.3em 0.3em 0em 0em;
 }
+#barre-navigation ul li a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
 #btn-cherche:hover{
     width: 250px;
 }
+/*-- section caroussel plat --*/
+.carousel-inner{
+    width: 100%;
+}
+.carousel-item {
+    margin: auto;
+}
+.carousel-item .btn{
+    color: white;
+    background-color: #8c775c;
+}
+/*-- section Menu --*/
 #menu figure{
     display: flex;
+    /* position:relative; */
+    /* overflow: hidden; */
+    /* width: 90em; */
+    /* height: 20em; */
 }
+/* #menu figure img{ */
+    /* position: absolute; */
+    /* transition: transform .2s; */
+/* } */
+/* #menu figure img:hover{ */
+    /* transform: scale(1.5); */
+    /* overflow: hidden; */
+/* } */
 #menu figcaption{
     display: flex;
     flex-direction: column;
@@ -60,10 +97,7 @@ a{
     color: #ffffff;
     background-color: #8c775c;
 }
-.carousel-item .btn{
-    color: white;
-    background-color: #8c775c;
-}
+/*--Liste de plats--*/
 #nos-plats a figure figcaption{
     color: white;
     font-weight: bolder;
@@ -96,14 +130,15 @@ a{
 #nos-plats h5{
     color: beige;
 }
-.effet-hover{
-    overflow: hidden;
-}
+/*--deco--*/
 #deco{
-    background-image: url("../images/fond2.jpg");
+    background-image: url("../images/fond2.jpg") ;
     color: seashell;
     height: 20em;
+    background-attachment: fixed;
+    
 }
+/*-- carte blog --*/
 .card-deck .card-body p{
     border-color: gray;
     border-bottom-style: dotted; 
@@ -114,6 +149,7 @@ a{
 .card-body a:hover{
     font-weight: bold;
 }
-#carousel-commentaire > div > blockquote > p:nth-child(1) > i{
+/*--carousel commentaire--*/
+#commentaire #carousel-commentaire blockquote p{
     color: #ffffff;
 }
