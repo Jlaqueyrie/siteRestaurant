@@ -15,7 +15,7 @@ a{
 #coordonnee, #commentaire{
     background-color: #8c775c;
 }
-#email, #login-inscription{
+#email, #login-inscription, #langue{
     background-color: #353535;
     text-align: center;
 }
@@ -43,13 +43,22 @@ a{
     height: 2em;
     vertical-align: middle;
 }
+#coordonnee a{
+    color: #ffffff;
+}
+#coordonnee a:hover{
+    font-weight: bold;
+}
 #telephone{
     border:
     0px 5px 0px 0xpx;
 }
+#login-incription{
+    justify-content: flex-end;
+}
 /*--section barre navigation--*/
 #barre-navigation{
-   background-color: #ffffff;"
+   background-color: #ffffff;
 }
 #barre-navigation ul li:hover{
     background-color: #8c775c;
@@ -137,6 +146,11 @@ a{
     height: 20em;
     background-attachment: fixed;
     
+}
+.barre-deco{
+    height: 0.1em;
+    width: 70%;
+    background-color: #EAEFF5
 }
 /*-- carte blog --*/
 .card-deck .card-body p{

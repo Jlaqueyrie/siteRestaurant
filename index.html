@@ -7,8 +7,11 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- référencement -->
             <title>Site Restaurant</title>
-            <meta name="description" content="">
+            <meta name="description" content="restaurant de spécialité XYZ à Toulouse, meilleur chef de l'année 2020">
+            <meta name="keywords" content="restaurant indien panneer curry végétarien vegan">
+            <!-- fin référencement -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- CSS only -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -17,30 +20,33 @@
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/style_responsive.css"
         </head>
         <body>
             <main id="accueil" class="container-fluid">
 
                 <section id="coordonnee" class="row justify-content-around">
-                    <div id="telephone" class="col-md-3" >
-                        <span class="border-right pr-3"><span class="material-icons md-14 ml-5">call</span>00.00.00.00.00</span>
-                        <span class="material-icons md-14">call</span>00.00.00.00.00
+                    <div id="telephone" class="col-md-4" >
+                        <span class="border-right pr-3"><span class="material-icons md-14 ml-5">call</span> <a href="tel:00.00.00.00.00" class="text-decoration-none">00.00.00.00.00</a></span>
+                        <span class="material-icons md-14">call</span><a href="tel:00.00.00.00.00" class="text-decoration-none">00.00.00.00.00</a>
                     </div>
-                    <div id="email" class="col-md-6 text-center">
-                        <span class="material-icons md-14">email</span>monemail@monresto.com
+                    <div id="email" class="col-md-4 text-center">
+                        <span class="material-icons md-14">email</span><a href="mailto:monemail@monresto.com" class="text-decoration-none">monemail@monresto.com</a>
                     </div>
                     <div id="login-inscription" class="col-md-3" >
-                        <span class="material-icons md-14">login</span>Se connecter 
-                        <span class="material-icons md-14">description</span>S'inscrire 
-                        <select id="langue">
-                            <option value="FR">Fr</option>
-                            <option value="EN">En</option>
-                            <option value="CN">Cn</option>
+                        <span class="material-icons md-14">login</span> <a href="#" class="text-decoration-none">Se connecter</a> 
+                        <span class="material-icons md-14">description</span><a href="#" class="text-decoration-none">S'inscrire</a> 
+                    </div>
+                    <div id="langue" class="col-md-1 justify-content-end">
+                        <select>
+                                <option value="FR">Fr</option>
+                                <option value="EN">En</option>
+                                <option value="CN">Cn</option>
                         </select>
                     </div>
                 </section>
 
-                <section id="logo">
+                <section id="logo" class="row ">
                     <img src="images/logo.png" alt="logo restaurant">
                 </section>
 
@@ -87,7 +93,8 @@
                 </section>
 
                 <section id="carousel">
-                    <div id="carouselPlats" class="carousel slide" data-ride="carousel">
+                    <!-- -d-none d-md-block : cache l'élément si l'écran est plus petit que le point de cassure md -->
+                    <div id="carouselPlats" class="carousel slide d-none d-md-block" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselPlats" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselPlats" data-slide-to="1"></li>
@@ -124,7 +131,7 @@
                 <section id="menu" class="container mt-2">
                     <div class="row no-gutters">
                             <div class="text-center mb-3">
-                                <h3 class="u">Nos Menu</h3>
+                                <h3>Nos Menu</h3>
                                 <p class="texte-couleur-principale">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque 
                                     sapiente aperiam minima veritatis deleniti placeat, ad obcaecati,
@@ -132,9 +139,9 @@
                                     ipsum similique mollitia totam blanditiis.
                                 </p>
                             </div>
-                                <div class="row">
+                            <div class="row">
                                 <figure class="col-md-6">
-                                    <img src="images/delicious_1.jpg" alt="image-menu-petit-déjeuner">
+                                    <img src="images/delicious_1.jpg" alt="image-menu-petit-déjeuner" class="d-none d-md-block">
                                     <figcaption class="text-left mx-2">
                                         <h5>Petit déjeuner</h5>
                                         <p>
@@ -145,7 +152,7 @@
                                     </figcaption>
                                 </figure>
                                 <figure class="col-md-6">
-                                    <img src="images/delicious_2.jpg" alt="image-menu-déjeuner">
+                                    <img src="images/delicious_2.jpg" alt="image-menu-déjeuner"class="d-none d-md-block">
                                     <figcaption class="text-left mx-2">
                                         <h5>Déjeuner</h5>
                                         <p>
@@ -158,7 +165,7 @@
                             </div>
                             <div class="row">
                                 <figure class="col-md-6">
-                                    <img src="images/delicious_3.jpg" alt="image-menu-dinner">
+                                    <img src="images/delicious_3.jpg" alt="image-menu-dinner"class="d-none d-md-block">
                                     <figcaption class="text-left mx-2">
                                         <h5>Dinner</h5>
                                         <p>
@@ -169,7 +176,7 @@
                                     </figcaption>
                                 </figure>
                                 <figure class="col-md-6">
-                                    <img src="images/delicious_4.jpg" alt="image-menu-fast-food">
+                                    <img src="images/delicious_4.jpg" alt="image-menu-fast-food"class="d-none d-md-block">
                                     <figcaption class="text-left mx-2">
                                         <h5>Fast-Food</h5>
                                         <p>
@@ -183,17 +190,17 @@
                         </div>
                 </section>
 
-                <section id="nos-plats" class="mt-3">
+                <section id="nos-plats" class="text-center mt-2">
+                    <div class="container">
+                        <h3>Nos plats</h3>
+                        <p class="texte-couleur-principale">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                consequuntur? Omnis possimus numquam beatae quaerat asperiores praesentium eaque 
+                                dignissimos maxime amet deserunt, iusto dolores at iure 
+                                architecto sed cumque corporis!
+                        </p>
+                    </div>
                     <div class="container-fluid">
-                        <div class="col-md-6 offset-3 text-center">
-                            <h3>Nos plats</h3>
-                            <p class="texte-couleur-principale">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                                    consequuntur? Omnis possimus numquam beatae quaerat asperiores praesentium eaque 
-                                    dignissimos maxime amet deserunt, iusto dolores at iure 
-                                    architecto sed cumque corporis!
-                            </p>
-                        </div>
                         <div class="row justify-content-center" >
                             <a href="#">
                                 <figure>
@@ -335,10 +342,10 @@
                     </div>
                 </section>
                 <section id="deco" class="row justify-content-center align-items-center mt-2">
-                    <div class="col-md-6 text-center">
-                        <div style="height: 0.1em;  width: 40em ; background-color: #EAEFF5"></div>
+                    <div class="col-md-6  offset-col-3 text-center">
+                        <div class="barre-deco"></div>
                         <h2>Lorem ipsum dolor</h2>
-                        <div style="height: 0.1em;  width: 40em ; background-color: #EAEFF5"></div>
+                        <div class="barre-deco"></div>
                     </div>
                 </section>
                 <section id="reservation" class="container mb-3">
