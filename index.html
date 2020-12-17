@@ -20,12 +20,13 @@
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/style.css">
-            <link rel="stylesheet" href="css/style_responsive.css"
+            <link rel="stylesheet" href="css/style_responsive.css">
         </head>
         <body>
             <main id="accueil" class="container-fluid">
 
                 <section id="coordonnee" class="row justify-content-around">
+                    <!-- pb : pas d'angle à la fin de la div comparé à l'ojectif / responif : contenu pas très bien centré (suggestion?)-->
                     <div id="telephone" class="col-md-4" >
                         <span class="border-right pr-3"><span class="material-icons md-14 ml-5">call</span> <a href="tel:00.00.00.00.00" class="text-decoration-none">00.00.00.00.00</a></span>
                         <span class="material-icons md-14">call</span><a href="tel:00.00.00.00.00" class="text-decoration-none">00.00.00.00.00</a>
@@ -50,7 +51,7 @@
                     <img src="images/logo.png" alt="logo restaurant">
                 </section>
 
-                <section id="barre-navigation" class="row">
+                <section id="barre-navigation" class="row sticky-top">
                     <nav class="navbar  navbar-expand-md navbar-light col-md-8 offset-md-2" style="background-color: #ffffff;">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barre-navigation-principale" aria-controls="barre-navigation-principale" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -83,7 +84,7 @@
                                     <a class="nav-link" href="#coordonnee">Contact</a>
                                 </li>
                             </ul>
-                            <!-- pas d'expansion de l'input sur hover de la loupe ou de la zone, et zone vraiment décallé par rapport au menu -->
+                            <!-- pb: zone recherche vraiment décallé par rapport au menu et ouverture d'input sur le côté droit.-->
                             <button type="button" class="btn" data-toggle="collapse" data-target="#cherche">
                                 <span class="material-icons">search</span>
                             </button>
@@ -93,13 +94,12 @@
                 </section>
 
                 <section id="carousel">
-                    <!-- -d-none d-md-block : cache l'élément si l'écran est plus petit que le point de cassure md -->
+                    <!-- d-none d-md-block : cache l'élément si l'écran est plus petit que le point de cassure md -->
                     <div id="carouselPlats" class="carousel slide d-none d-md-block" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselPlats" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselPlats" data-slide-to="1"></li>
                         </ol>
-                        <!-- images de différentes tailles :> problème d'affichage du btn "+détail" -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/image-1.jpg" class="d-block h-60" alt="caroussel-plat-1">
@@ -163,6 +163,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
+                            <!-- pb:espace entre les deux lignes -->
                             <div class="row">
                                 <figure class="col-md-6">
                                     <img src="images/delicious_3.jpg" alt="image-menu-dinner"class="d-none d-md-block">
@@ -342,7 +343,8 @@
                     </div>
                 </section>
                 <section id="deco" class="row justify-content-center align-items-center mt-2">
-                    <div class="col-md-6  offset-col-3 text-center">
+                    <div class="col-md-6 text-center">
+                        <!-- pb: barre non centré  avec le texte-->
                         <div class="barre-deco"></div>
                         <h2>Lorem ipsum dolor</h2>
                         <div class="barre-deco"></div>
@@ -364,7 +366,7 @@
                         </div>
                         <div><span class="material-icons md-14">people</span></div>
                         <div class="col-md-2">
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="nombrePersonnes">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -377,6 +379,7 @@
                         <a href="#" class="btn btn-outline-dark">Réserver</a>
                     </div>
                 </section>
+                <!-- pb: image saute entre les différent slide -->
                 <section id="commentaire" class="align-items-center">
                     <div id="carousel-commentaire" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
