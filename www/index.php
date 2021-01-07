@@ -429,34 +429,21 @@
                             Exercitationem ducimus atque, vero doloribus libero odio provident 
                         </p>
                         <div class="card-deck">
-                            <div class="card">
-                              <img src="./images/news-1.jpg" class="card-img-top" alt="blog-new-1">
-                              <div class="card-body">
-                                <h5 class="card-title">Carte 1</h5>
-                                <h6 class="card-text texte-couleur-">17 Juiller 2020 par AuteurXYZ</h6>
-                                <p class="card-text pb-3">LLorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate earum fugit sit incidunt vel error distinctio deleniti accusantiu</p>
-                                <a href="#" class="text-decoration-none">+ details</a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="./images/news-2.jpg" class="card-img-top" alt="blog-news-2">
-                              <div class="card-body">
-                                <h5 class="card-title">Carte 2</h5>
-                                <h6 class="card-text">17 Juiller 2020 par AuteurXYZ</h6>
-                                <p class="card-text pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate earum fugit sit incidunt vel error distinctio deleniti accusantium</p>
-                                <a href="#" class="text-decoration-none">+ details</a>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <img src="./images/news-3.jpg" class="card-img-top" alt="blog-news-3">
-                              <div class="card-body">
-                                <h5 class="card-title">Carte 3</h5>
-                                <h6 class="card-text">17 Juiller 2020 par AuteurXYZ</h6>
-                                <p class="card-text pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fuga tempore neque beatae natus cupiditate explicabo commodi quisquam eius</p>
-                                <a href="#" class="text-decoration-none">+ details</a>
-                              </div>
-                            </div>
-                          </div>
+                            <?php
+                                include dirname(__DIR__).'\src\init.php';
+                                foreach ($card_blog as $card=>$card_content){
+                                    echo '<div class="card">';
+                                    echo '<img src="'.$card_content['img'].'" class="card-img-top" alt="blog-new-1">';
+                                    echo '<div class="card-body">';
+                                    echo '<h5 class="card-title">'.$card_content['titre'].'</h5>';
+                                    echo '<h6 class="card-text texte-couleur-">'.$card_content['date'].'</h6>';
+                                    echo '<p class="card-text pb-3">'.$card_content['contenu'].'</p>';
+                                    echo '<a href="'.$card_content['lien'].'" class="text-decoration-none">+ details</a>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
+                            ?>
+                        </div>
                 </section>
                 <section id="menu-site" class="row justify-content-center mt-4">
                     <div id="information" class="col-md-2">
