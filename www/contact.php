@@ -13,7 +13,7 @@
      <main class="containter">
         <div class="row">
             <h1 class="col-md-10 offset-1 text-center">Contactez  nous</h1>
-            <form method="POST" action="envoie-message.php" class="col-md-10 offset-md-1">
+            <form method="POST" action="../src/envoie-message.php" class="col-md-10 offset-md-1">
                 <div class="form-group col-md-8 offset-md-2">
                     <label for="in_nomClient" class="mb-2" id="lbl_nomClient">Entrez votre nom</label>
                     <input type="text" class="form-control mb-2" id="in_nomClient" aria-describedby="entrez vôtre nom" name="in_nomClient" placeholder="Entrez votre nom" required>

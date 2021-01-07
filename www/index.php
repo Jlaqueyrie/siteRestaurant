@@ -81,7 +81,7 @@
                                     <a class="nav-link" href="#">Boutique</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contact</a>
+                                    <a class="nav-link" href="../www/contact.php">Contact</a>
                                 </li>
                             </ul>
                             <!-- pb: zone recherche vraiment décallé par rapport au menu et ouverture d'input sur le côté droit.-->
