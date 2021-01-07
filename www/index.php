@@ -438,7 +438,7 @@
                                     echo '<h5 class="card-title">'.$card_content['titre'].'</h5>';
                                     echo '<h6 class="card-text texte-couleur-">'.$card_content['date'].'</h6>';
                                     echo '<p class="card-text pb-3">'.$card_content['contenu'].'</p>';
-                                    echo '<a href="'.$card_content['lien'].'" class="text-decoration-none">+ details</a>';
+                                    echo '<a href="article.php?id='.$card.'" class="text-decoration-none">+ details</a>';
                                     echo '</div>';
                                     echo '</div>';
                                 }

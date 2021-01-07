@@ -91,7 +91,7 @@
             </section>
             <section>
                 <?php
-                    echo $contenu_page;
+                    echo $page_contenu;
                 ?>
             </section>
             <section id="menu-site" class="row justify-content-center mt-4">

@@ -1,6 +1,6 @@
 <?php
   include dirname(__DIR__).'\src\init.php';
-  $contenu_page=
+  $page_contenu=
   '
     <h1 class="col-md-10 offset-1 text-center">Contactez  nous</h1>
     <form method="POST" action="../src/envoie-message.php" class="col-md-10 offset-md-1">
