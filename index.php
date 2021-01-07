@@ -58,7 +58,7 @@
                         </button>
 
                         <div class="collapse navbar-collapse" id="barre-navigation-principale">
-                            <ul class="navbar-nav mr-auto">
+                            <ul class="navbar-nav">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
                                 </li>
@@ -81,11 +81,11 @@
                                     <a class="nav-link" href="#">Boutique</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#coordonnee">Contact</a>
+                                    <a class="nav-link" href="contact.php">Contact</a>
                                 </li>
                             </ul>
                             <!-- pb: zone recherche vraiment décallé par rapport au menu et ouverture d'input sur le côté droit.-->
-                            <button type="button" class="btn" data-toggle="collapse" data-target="#cherche">
+                            <button type="button" class="btn ml-2" data-toggle="collapse" data-target="#cherche">
                                 <span class="material-icons">search</span>
                             </button>
                             <input  id="cherche"class="ml-3 collapse" type="text" placeholder="Rechercher">
