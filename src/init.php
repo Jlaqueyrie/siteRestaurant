@@ -29,3 +29,6 @@ $card_blog = [
         'lien' => '#' ,
     ]
     ];
+
+    $utilisateur_id = "admin";
+    $utilisateur_mdp ="pass";
