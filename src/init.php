@@ -11,7 +11,7 @@ session_start();
 
 //connexion bdd
 
-$conn_= mysqli_connect('localhost',
+$conn_bdd= mysqli_connect('localhost',
                         'root',
                         '',
                         'bdd_blog_restaurant');
