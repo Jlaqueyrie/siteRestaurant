@@ -431,16 +431,26 @@
                         <div class="card-deck">
                             <?php
                                 include dirname(__DIR__).'\src\init.php';
-                                foreach ($card_blog as $card=>$card_content){
-                                    echo '<div class="card">';
-                                    echo '<img src="'.$card_content['img'].'" class="card-img-top" alt="blog-new-1">';
-                                    echo '<div class="card-body">';
-                                    echo '<h5 class="card-title">'.$card_content['titre'].'</h5>';
-                                    echo '<h6 class="card-text texte-couleur-">'.$card_content['date'].'</h6>';
-                                    echo '<p class="card-text pb-3">'.$card_content['contenu'].'</p>';
-                                    echo '<a href="article.php?id='.$card.'" class="text-decoration-none">+ details</a>';
-                                    echo '</div>';
-                                    echo '</div>';
+                                $sql_select = "SELECT * 
+                                               FROM articles
+                                               ORDER BY date
+                                               LIMIT 6";
+                                if($sql_select_res = mysqli_query($conn_bdd, $sql_select)){
+
+                                    while($ligne = mysqli_fetch_assoc($sql_select_res)){
+                                        $date_debut = date_create_from_format("Y-m-d H:i:s", $ligne['date']);
+
+                                        echo '<div class="card">';
+                                        echo '<img src="img/'.$ligne['image'].'" class="card-img-top" alt="blog-new-1">';
+                                        echo '<div class="card-body">';
+                                        echo '<h5 class="card-title">'.$ligne['titre'].'</h5>';
+                                        echo '<h6 class="card-text texte-couleur-">'.$ligne['date'].'</h6>';
+                                        echo '<p class="card-text pb-3">'.$ligne['contenu'].'</p>';
+                                        echo '<a href="article.php?id='.$ligne['id'].'" class="text-decoration-none">+ details</a>';
+                                        echo '</div>';
+                                        echo '</div>';
+
+                                    }
                                 }
                             ?>
                         </div>

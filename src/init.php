@@ -7,7 +7,7 @@ ini_set('log_errors',1);
 error_reporting(E_ALL);
 
 //demarer une session
-session_start();
+// session_start();
 
 //connexion bdd
 
