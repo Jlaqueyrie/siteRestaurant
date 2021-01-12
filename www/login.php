@@ -13,7 +13,7 @@ if(empty($_POST)=== false){
 
         if($form_u_mdp == $utilisateur_mdp){
             //gestion session utilisateur
-
+            $_SESSION['s_utilisateur'] = $form_u_id;
             //redirectiond page
             header('Location:index.php');
             exit();
