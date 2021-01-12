@@ -6,18 +6,25 @@
     if(isset($_GET['id'])&&($_GET['id'])===false){
         trigger_error('article inconnu',E_USER_ERROR);
     }
+    else{
+        $article_id =intval($_GET['id']);
 
-    $article_id =$_GET['id'];
-    $article = $card_blog[$article_id];
+        //requête sql
+        
+        $sql_select_article = sprintf("SELECT * FROM article WHERE id=id AND id=%s", $article_id);
 
-    $page_contenu = sprintf("<div class=\"text-center\ col-md-6 offset-md-3\">
-                                <h3>%s</h2>
-                                <h5>%s</h3>
-                                <img src=\"%s\">
-                                <p>%s</p>
-                            </div>",
-                            $article['titre'],$article['date'],$article['img'] ,$article['contenu']
-                           );
+        $sql_select_article_res = mysqli_query($conn_bdd, $sql_select_article);
+        $article = mysqli_fetch_assoc($sql_select_article_res);
+
+        $page_contenu = sprintf("<div class=\"text-center\ col-md-6 offset-md-3\">
+                                    <h3>%s</h2>
+                                    <h5>%s</h3>
+                                    <img src=\"images/%s\">
+                                    <p>%s</p>
+                                </div>",
+                                $article['titre'],$article['date'],$article['image'] ,$article['contenu']
+                            );
+    }
 
     include dirname(__DIR__).'\src\layout.php';
 ?>

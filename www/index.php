@@ -432,16 +432,17 @@
                             <?php
                                 include dirname(__DIR__).'\src\init.php';
                                 $sql_select = "SELECT * 
-                                               FROM articles
+                                               FROM article
                                                ORDER BY date
-                                               LIMIT 6";
+                                               LIMIT 3";
+
                                 if($sql_select_res = mysqli_query($conn_bdd, $sql_select)){
 
                                     while($ligne = mysqli_fetch_assoc($sql_select_res)){
                                         $date_debut = date_create_from_format("Y-m-d H:i:s", $ligne['date']);
 
                                         echo '<div class="card">';
-                                        echo '<img src="img/'.$ligne['image'].'" class="card-img-top" alt="blog-new-1">';
+                                        echo '<img src="images/'.$ligne['image'].'" class="card-img-top" alt="blog-new-1">';
                                         echo '<div class="card-body">';
                                         echo '<h5 class="card-title">'.$ligne['titre'].'</h5>';
                                         echo '<h6 class="card-text texte-couleur-">'.$ligne['date'].'</h6>';
@@ -451,6 +452,10 @@
                                         echo '</div>';
 
                                     }
+                                }
+                                else{
+                                    printf('probleme exec query');
+                                    printf(mysqli_errno($conn_bdd));
                                 }
                             ?>
                         </div>
